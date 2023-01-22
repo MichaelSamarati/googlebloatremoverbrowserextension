@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Google Bloat Remover",
   "version": "0.1.0",
   "icons": {

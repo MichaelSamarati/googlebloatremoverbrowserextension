@@ -11,6 +11,7 @@ function run() {
     "Gdd5U", //Picture search
     "lnXdpd", //Google picture
     "LX3sZb", //Top bar
+    "GVqCqe", //Share icon
   ];
 
   deleteBloatElements(bloatElementClasses);
@@ -18,9 +19,7 @@ function run() {
 
 function deleteBloatElements(bloatElementClasses) {
   bloatElementClasses.map((bloatClass) => {
-    console.log(bloatClass);
     const bloatElements = document.getElementsByClassName(bloatClass);
-    console.log(bloatElements);
     if (bloatElements.length >= 1) {
       for (let e of bloatElements) {
         remove(e);
