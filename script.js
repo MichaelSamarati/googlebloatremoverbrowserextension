@@ -1,5 +1,5 @@
 run();
-
+//TODO: dont remove but keep neccessary
 function run() {
   const bloatElementClasses = [
     "c93Gbe", //Footer1
@@ -15,6 +15,13 @@ function run() {
   ];
 
   deleteBloatElements(bloatElementClasses);
+
+  const raiseZIndexElements = document.getElementsByClassName("ikrT4e");
+  if (raiseZIndexElements.length >= 1) {
+    for (let e of raiseZIndexElements) {
+      raiseZIndexElements.style.zIndex = 100;
+    }
+  }
 }
 
 function deleteBloatElements(bloatElementClasses) {
