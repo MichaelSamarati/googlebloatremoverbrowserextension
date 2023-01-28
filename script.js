@@ -12,14 +12,15 @@ function run() {
     "lnXdpd", //Google picture
     "LX3sZb", //Top bar
     "GVqCqe", //Share icon
+    "qarstb", //div under search bar
   ];
 
   deleteBloatElements(bloatElementClasses);
 
-  const raiseZIndexElements = document.getElementsByClassName("ikrT4e");
+  const raiseZIndexElements = document.getElementsByClassName("ikrT4e"); //search bar div
   if (raiseZIndexElements.length >= 1) {
     for (let e of raiseZIndexElements) {
-      raiseZIndexElements.style.zIndex = 100;
+      e.style.zIndex = 100;
     }
   }
 }
