@@ -17,12 +17,26 @@ function run() {
 
   deleteBloatElements(bloatElementClasses);
 
-  const raiseZIndexElements = document.getElementsByClassName("ikrT4e"); //search bar div
-  if (raiseZIndexElements.length >= 1) {
-    for (let e of raiseZIndexElements) {
-      e.style.zIndex = 100;
+  const raiseZIndexElementClasses = [
+    "RNNXgb", //search bar
+    "gLFyf", //input box important
+    "dRYYxd", //right side search bar
+    "vZr2rb", //input div wrapper
+    "iblpc", //left side
+    "SDkEP", //search bar inner wrapper
+  ];
+  raiseZIndexElements(raiseZIndexElementClasses);
+}
+
+function raiseZIndexElements(raiseZIndexElementClasses) {
+  raiseZIndexElementClasses.map((c) => {
+    const raiseZIndexElements = document.getElementsByClassName(c);
+    if (raiseZIndexElements.length >= 1) {
+      for (let e of raiseZIndexElements) {
+        e.style.zIndex = 100;
+      }
     }
-  }
+  });
 }
 
 function deleteBloatElements(bloatElementClasses) {
