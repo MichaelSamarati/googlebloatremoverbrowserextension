@@ -24,6 +24,8 @@ function run() {
     "vZr2rb", //input div wrapper
     "iblpc", //left side
     "SDkEP", //search bar inner wrapper
+    "UUbT9", //search popup wrapper
+    "aajZCb", //search popup
   ];
   raiseZIndexElements(raiseZIndexElementClasses);
 }
