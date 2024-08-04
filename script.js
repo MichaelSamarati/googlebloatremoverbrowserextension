@@ -13,6 +13,8 @@ function run() {
     "LX3sZb", //Top bar
     "GVqCqe", //Share icon
     "qarstb", //div under search bar
+    "n1xJcf", //top bar
+    "Ne6nSd", //top bar
   ];
 
   deleteBloatElements(bloatElementClasses);
